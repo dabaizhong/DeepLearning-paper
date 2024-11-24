@@ -22,7 +22,7 @@ class DWSC(nn.Module):
         return x
 
 class LITEMV(nn.Module):
-    """适用于多变量时间序列的 LITEMV 模型"""
+    """LITEMV 模型"""
     def __init__(self, input_channels = 16, num_classes = 24):
         super().__init__()
         # 第一层：并行多路复用卷积 (Ni = 6)
